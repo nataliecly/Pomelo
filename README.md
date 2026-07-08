@@ -115,7 +115,7 @@ Thank you for your continued support throughout the project!
 [lex-github]: https://github.com/levxxvi/
 [natalie-linkedin]: https://www.linkedin.com/in/natalieyu74/
 [natalie-github]: https://github.com/nataliecly
-[project-github]: https://github.com/ChinaiArman/Pomelo
+[project-github]: https://github.com/nataliecly/Pomelo
 [NodeJS]: https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white
 [NodeJS-url]: https://nodejs.org/en/
 [DynamoDB]: https://img.shields.io/badge/Amazon%20DynamoDB-4053D6?style=for-the-badge&logo=amazon-dynamodb&logoColor=white
