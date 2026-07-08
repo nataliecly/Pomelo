@@ -28,7 +28,7 @@ const Jumbotron = ({ username, transactions, spendingCategory, teamSpaceName, to
         var categoryCard = <CategoryCard key="largest-category" category={spendingCategory} />
     }
 
-    if (transactions.length === 0) {
+    if (!transactions || transactions.length === 0) {
         var transactionCard = <NullSectionCard header="Oops, We couldn't find any recent transactions..." body="Add a transaction to start tracking finances with Pomelo." />
     } else {
         var transactionCard = <LatestTransactionsCard transactions={transactions} />
@@ -107,7 +107,7 @@ const Jumbotron = ({ username, transactions, spendingCategory, teamSpaceName, to
                     </a>
                     <h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">Spending Categories</h2>
                     <div className="flex flex-wrap justify-center items-center gap-5" id="categories">
-                        {spendingCategories.map((category, index) => (
+                        {(spendingCategories || []).map((category, index) => (
                             <CategoryCard key={index} category={category} />
                         ))}
                         {isLeader && (
