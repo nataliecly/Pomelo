@@ -1,4 +1,5 @@
 <!-- DOCUMENT HEADER -->
+
 <a name="readme-top"></a>
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -17,8 +18,6 @@
 
   <p align="center">
     A full stack website leveraging NodeJS + AWS services to create a RESTful API and a React + Tailwind frontend to deliver a team-focused budgeting app for small projects and events.
-    <br>
-    <a href="https://pomelo-client.vercel.app/"><strong>View the deployed website »</strong></a>
   </p>
 </div>
 
@@ -38,6 +37,7 @@
 </details>
 
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 ![Product Name Screen Shot][product-screenshot]
@@ -48,23 +48,20 @@ Pomelo is a full stack website that allows users to create and manage budgets fo
 
 ### Built With
 
-* [![NodeJS][NodeJS]][NodeJS-url]
-* [![DynamoDB][DynamoDB]][DynamoDB-url]
-* [![S3][S3]][S3-url]
-* [![Beanstalk][Beanstalk]][Beanstalk-url]
-* [![Cogito][Cogito]][Cogito-url]
-* [![React][React]][React-url]
-* [![Tailwind][Tailwind]][Tailwind-url]
+- [![NodeJS][NodeJS]][NodeJS-url]
+- [![DynamoDB][DynamoDB]][DynamoDB-url]
+- [![S3][S3]][S3-url]
+- [![Beanstalk][Beanstalk]][Beanstalk-url]
+- [![Cogito][Cogito]][Cogito-url]
+- [![React][React]][React-url]
+- [![Tailwind][Tailwind]][Tailwind-url]
 
-### Currently Hosted With
-
-* [![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
-
-(previously on AWS Beanstalk)
+The deployment is currently retired.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- DEVELOPER TEAM -->
+
 ## Developer Team
 
 Arman Chinai:
@@ -82,14 +79,14 @@ Natalie Yu:
 Project Link:
 
 [![GitHub][github-shield]][project-github]
-[![Deployed Website](https://img.shields.io/badge/Deployed%20Website-4053D6?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://pomelo-client.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
+
 ## Acknowledgments
 
-* Frederic Guo, Cloud Computing Instructor
+- Frederic Guo, Cloud Computing Instructor
 
 Thank you for your continued support throughout the project!
 
@@ -97,7 +94,8 @@ Thank you for your continued support throughout the project!
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[product-screenshot]: resources\preview.png
+
+[product-screenshot]: https://raw.githubusercontent.com/ChinaiArman/Pomelo/refs/heads/main/resources/preview.png
 [contributors-shield]: https://img.shields.io/github/contributors/chinaiarman/Pomelo.svg?style=for-the-badge
 [contributors-url]: https://github.com/ChinaiArman/Pomelo/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/ChinaiArman/Pomelo.svg?style=for-the-badge
