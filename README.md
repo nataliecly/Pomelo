@@ -10,7 +10,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/ChinaiArman/Pomelo">
+  <a href="https://github.com/nataliecly/Pomelo">
     <img src="resources\logo_full-BV6CCcpf.png" alt="Logo" height="80">
   </a>
 
@@ -18,6 +18,11 @@
 
   <p align="center">
     A full stack website leveraging NodeJS + AWS services to create a RESTful API and a React + Tailwind frontend to deliver a team-focused budgeting app for small projects and events.
+  </p>
+  <p align="center">
+    <a href="https://pomeloapp.vercel.app/">
+      >> Deployed Website
+    </a>
   </p>
 </div>
 
@@ -55,8 +60,6 @@ Pomelo is a full stack website that allows users to create and manage budgets fo
 - [![Cogito][Cogito]][Cogito-url]
 - [![React][React]][React-url]
 - [![Tailwind][Tailwind]][Tailwind-url]
-
-The deployment is currently retired.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
