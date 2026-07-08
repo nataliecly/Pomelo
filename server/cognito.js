@@ -5,8 +5,8 @@ import { CognitoUserPool, AuthenticationDetails, CognitoUser, CognitoUserAttribu
 
 
 const poolData = {    
-    UserPoolId : "us-west-2_Pz2g3MM6g",
-    ClientId : "3ouo9c109bpeahc1hdjkikosf"
+    UserPoolId: process.env.COGNITO_USER_POOL_ID,
+    ClientId: process.env.COGNITO_CLIENT_ID
     }; 
 const pool_region = 'us-west-2'
 const userPool = new CognitoUserPool(poolData);
@@ -55,33 +55,16 @@ export let login = async function (username, password) {
 }
 
 export let signup = async function (username, email, password) {
-    var attributeList = [];
-    attributeList.push(new CognitoUserAttribute(
-        {
-            Name: "email",
-            Value: email
-        }, 
-        {
-            Name: "email_verified",
-            Value: "true"
-        }
-    ));
+    var attributeList = [
+        new CognitoUserAttribute({ Name: "email", Value: email })
+    ];
     return new Promise((resolve, reject) => {
         userPool.signUp(username, password, attributeList, null, function(err, result){
             if (err) {
-                let response = {
-                    "status": 401,
-                    "message": err.message,
-                    "data": null
-                }
+                let response = { "status": 401, "message": err.message, "data": null }
                 resolve(response)
-                
             } else {
-                let response = {
-                    "status": 202,
-                    "message": result.message,
-                    "data": null
-                }
+                let response = { "status": 202, "message": result.message, "data": null }
                 resolve(response)
             }
         });

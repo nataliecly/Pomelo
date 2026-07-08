@@ -1,5 +1,7 @@
 import dotenv from "dotenv"
 dotenv.config()
+console.log("AWS KEY:", process.env.AWS_ACCESS_KEY_ID)
+console.log("AWS SECRET:", process.env.AWS_SECRET_ACCESS_KEY)
 
 import crypto, { randomInt } from "crypto"
 import pkg from 'aws-sdk'
@@ -11,7 +13,7 @@ let awsConfig = {
     "region": "us-west-2",
     "endpoint": "http://dynamodb.us-west-2.amazonaws.com",
     "accessKeyId": process.env.AWS_ACCESS_KEY_ID,
-    "secretAccessKey": process.env.AWS_SECRET_ACCESS_KEY_ID
+    "secretAccessKey": process.env.AWS_SECRET_ACCESS_KEY
 }
 config.update(awsConfig)
 const TABLENAME = "TeamSpaces"
